@@ -1,0 +1,47 @@
+.gallery-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f6f2;
+}
+
+.gallery-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5.5rem 6rem 4rem;
+}
+
+.gallery-content {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.gallery-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.gallery-title {
+  font-size: clamp(2.5rem, 4.5vw, 3.4rem);
+  font-weight: 400;
+  color: #1f2a22;
+  line-height: 1.02;
+  margin-bottom: 1rem;
+}
+
+.gallery-description {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #4c5348;
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.75rem;
+  margin-top: 2.5rem;
+}
